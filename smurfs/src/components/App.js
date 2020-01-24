@@ -4,6 +4,9 @@ import axios from "axios";
 import Form from './Form';
 import SmurfList from './SmurfList';
 
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+
 const App = () => {
   axios 
     .get('http://localhost:3333/smurfs')
@@ -12,9 +15,12 @@ const App = () => {
     })
     return (
       <div className="App">
-        <h1>SMURFS! 2.0 W/ Redux</h1>
+         <Paper className='paper'>
+        <Typography variant='h4'>Create your very own Smurf Village!</Typography>
+        <br></br>
         <Form />
         <SmurfList />
+        </Paper>
       </div>
     );
   }

@@ -3,18 +3,22 @@ import Smurf from './Smurf';
 import { connect } from 'react-redux';
 import { fetchSmurfs } from '../actions/actions';
 
+import './App.css';
+import Card from '@material-ui/core/Card';
+
+
 const SmurfList = (props) => {
     useEffect(() => {
         props.fetchSmurfs()
         // console.log(props.smurfs)
-    }, [])
+    })
 
     return (
-        <div className='smurflist'>
+        <Card className='smurflist'>
             {props.smurfs.map(smurf => {
-                return <Smurf smurf={smurf}/>
+                 return <Smurf className='smurfs' smurf={smurf}/>
             })}
-        </div>
+        </Card>
     )
 }
 
