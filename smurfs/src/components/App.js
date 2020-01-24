@@ -8,7 +8,7 @@ const App = () => {
   axios 
     .get('http://localhost:3333/smurfs')
     .then(res => {
-      console.log(res)
+      // console.log(res)
     })
     return (
       <div className="App">
