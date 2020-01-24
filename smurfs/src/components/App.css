@@ -4,14 +4,13 @@
 .paper {
   width: 50%;
   margin: 0 auto;
-  opacity:85%;
-  padding:150px;
-
+  opacity: 85%;
+  padding: 150px;
 }
 
 body {
-  background: url('https://wallpapersite.com/images/pages/pic_h/4477.jpg') 
-  no-repeat center center;
+  background: url("https://wallpapersite.com/images/pages/pic_h/4477.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 
@@ -26,5 +25,4 @@ body {
   border: 1px solid black;
   width: 33%;
   margin: 30px auto;
-  
-} 
+}
